@@ -26,9 +26,9 @@ jobs:
       run: mvn -B package --file pom.xml
 
   deploy:
-    runs-on: alpine
+    runs-on: ubuntu-latest
     steps:
-    - name: printthe value
+    - name: print the value
       run: echo "working"
   
   
