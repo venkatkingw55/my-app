@@ -24,3 +24,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+  deploy:
+    runs-on: alpine
+    steps:
+    - name: printthe value
+      run: echo "working"
+  
+  
